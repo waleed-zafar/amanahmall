@@ -9,8 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-
     <title>Amanah-mall-pk</title>
     <!-- favicon -->
     <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
@@ -28,11 +26,8 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 </head>
-
-
 <body>
     <header class="padding-header" id="header">
-
         <div class="container">
             <div class="inner-header">
                 <div class="logo">
@@ -62,95 +57,87 @@
                     <div class="demo-btn" id="mobile-btn" style="display: none;">
                         <a href="#">Contact Us</a>
                     </div>
-
-
                 </nav>
                 <div class="demo-btn">
                     <a href="#services" class="btn btn--liquidBtn">
                         <span>Contact Us</span>
                         <div class="btn--liquidBtn--liquid"></div>
                     </a>
-
                 </div>
-
                 <div class="headerMobileOverlay"></div>
                 <div class="headerHamburger">
                     <button>
                         <span></span><span></span><span></span>
                     </button>
                 </div>
-
             </div>
         </div>
     </header>
-    <section class="banner">
-        <!-- Content -->
-        <div class="container">
-            <div class="home-flx">
-                <div class="hom-width">
-                    <div class="inner-banner" data-aos="fade-up">
-                        <span class="short-heading">Lahore's Premier Civic Destination</span>
-
-                        <h1>
-                            Shopping<br>
-                            <em>Rediscovered</em>
-                            <br>in Lahore.
-
-                        </h1>
-
-
-                        <div class="btns-flx">
-                            <div class="both-btns">
-                                <a href="#services" class="btn btn--liquidBtn">
-                                    <span>Explore Directory</span>
-                                    <div class="btn--liquidBtn--liquid"></div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="hom-width1">
-                    <video autoplay muted loop playsinline preload="auto">
-                        <source src="videos/videoplayback-ezgif.com-video-compressor.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
+    <section class="banner-reveal">
+        <!-- Actual HTML Video -->
+        <div class="banner-reveal__video">
+            <video autoplay muted loop playsinline preload="auto">
+                <source src="videos/videoplayback-ezgif.com-video-compressor.mp4" type="video/mp4">
+            </video>
         </div>
+        <!-- SVG Text Mask -->
+        <div class="banner-reveal__overlay">
+            <svg class="banner-reveal__svg" viewBox="0 0 1600 900" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="amanahGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f8f9ff" />
+                        <stop offset="25%" stop-color="#edf2ff" />
+                        <stop offset="50%" stop-color="#e7f2ff" />
+                        <stop offset="75%" stop-color="#e6fafa" />
+                        <stop offset="100%" stop-color="#f4f6ff" />
+                    </linearGradient>
+                    <mask id="amanahMask" x="0" y="0" width="1600" height="900" maskUnits="userSpaceOnUse"
+                        style="mask-type:luminance;">
+                        <rect width="1600" height="900" fill="white" />
 
+                        <text x="800" y="470" text-anchor="middle" dominant-baseline="middle" font-size="190"
+                            font-weight="900" fill="black">AMANAH MALL</text>
+                    </mask>
+                </defs>
+                <rect x="0" y="0" width="1600" height="900" fill="url(#amanahGradient)" mask="url(#amanahMask)" />
+            </svg>
+            <!-- Caption -->
+            <div class="banner-reveal__caption">
+                LAHORE'S PREMIER CIVIC DESTINATION
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="banner-reveal__scroll">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
     </section>
     <section class="our-story-new padding-main">
         <div class="container">
             <div class="our-stry-flex">
                 <div class="our-stry-width">
                     <div class="two-flx">
-
                         <!-- First Slider: Down -->
                         <div class="two-slider slider-down">
                             <div class="slider-track">
                                 <img src="images/Amanah-Mall_39303cb1b331bed9ea59a94c0491037e.png" alt="#">
                                 <img src="images/bouncing-1.jpg" alt="#">
-
                                 <!-- Duplicate -->
                                 <img src="images/Amanah-Mall_39303cb1b331bed9ea59a94c0491037e.png" alt="#">
                                 <img src="images/bouncing-1.jpg" alt="#">
                             </div>
                         </div>
-
                         <!-- Second Slider: Up -->
                         <div class="two-slider slider-up">
                             <div class="slider-track">
                                 <img src="images/compress-images-6.jpg" alt="#">
                                 <img src="images/compress-images-7.jpg" alt="#">
-
                                 <!-- Duplicate -->
                                 <img src="images/compress-images-6.jpg" alt="#">
                                 <img src="images/compress-images-7.jpg" alt="#">
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="our-stry-width">
@@ -166,7 +153,6 @@
                         <a href="#">Read the General Manager's Message <img src="images/arrow-short.svg" alt="#"></a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -186,50 +172,43 @@
                     </a>
                 </div>
             </div>
-
+            <!-- Animated Road Ribbon -->
+            <div class="event-road-ribbon">
+                <svg class="road-svg" viewBox="0 0 1440 220" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <path id="eventRoadPath" d="M -100 155
+                            C 100 155, 130 35, 350 45
+                            S 570 195, 770 125
+                            S 1000 10, 1190 65
+                            S 1350 175, 1550 85" />
+                    </defs>
+                    <!-- Road outer edge -->
+                    <use href="#eventRoadPath" fill="none" stroke="#101B65" stroke-width="54" stroke-linecap="round" />
+                    <!-- Road surface -->
+                    <use href="#eventRoadPath" fill="none" stroke="#0873C8" stroke-width="44" stroke-linecap="round" />
+                    <!-- Road center dashed line -->
+                    <!-- <use href="#eventRoadPath" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="18 17"
+                        stroke-linecap="round" /> -->
+                    <!-- Moving text -->
+                    <text class="road-text">
+                        <textPath href="#eventRoadPath" startOffset="0%">
+                            DISCOVER WHAT'S HAPPENING ✦ EXPLORE THE LATEST ✦
+                            DISCOVER WHAT'S HAPPENING ✦ EXPLORE THE LATEST ✦
+                            DISCOVER WHAT'S HAPPENING ✦ EXPLORE THE LATEST ✦
+                            DISCOVER WHAT'S HAPPENING ✦ EXPLORE THE LATEST ✦
+                            DISCOVER WHAT'S HAPPENING ✦ EXPLORE THE LATEST ✦
+                            DISCOVER WHAT'S HAPPENING ✦ EXPLORE THE LATEST ✦
+                            DISCOVER WHAT'S HAPPENING ✦ EXPLORE THE LATEST ✦
+                            DISCOVER WHAT'S HAPPENING ✦ EXPLORE THE LATEST ✦
+                            DISCOVER WHAT'S HAPPENING ✦ EXPLORE THE LATEST ✦
+                            <animate attributeName="startOffset" from="0%" to="-100%" dur="50s"
+                                repeatCount="indefinite" />
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
             <div class="swiper main-event-slider">
-
                 <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="event-inner">
-                            <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
-                                <span>Patriotic Gala</span>
-                                <h3>Azadi Mubarak Celebrations</h3>
-                                <p>Commemorating national unity with live acoustic orchestral performances, kids
-                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="event-inner">
-                            <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
-                                <span>Patriotic Gala</span>
-                                <h3>Azadi Mubarak Celebrations</h3>
-                                <p>Commemorating national unity with live acoustic orchestral performances, kids
-                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="event-inner">
-                            <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
-                                <span>Patriotic Gala</span>
-                                <h3>Azadi Mubarak Celebrations</h3>
-                                <p>Commemorating national unity with live acoustic orchestral performances, kids
-                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-
                     <div class="swiper-slide">
                         <div class="event-inner">
                             <a href="#">
@@ -245,7 +224,43 @@
                     <div class="swiper-slide">
                         <div class="event-inner">
                             <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
+                                <img src="images/imgi_16_basant-2026-580x390-1-ezgif.com-jpg-to-webp-converter1.webp" alt="#">
+                                <span>Patriotic Gala</span>
+                                <h3>Azadi Mubarak Celebrations</h3>
+                                <p>Commemorating national unity with live acoustic orchestral performances, kids
+                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="event-inner">
+                            <a href="#">
+                                <img src="images/imgi_17_14th-August-580x390-ezgif.com-jpg-to-webp-converter.webp" alt="#">
+                                <span>Patriotic Gala</span>
+                                <h3>Azadi Mubarak Celebrations</h3>
+                                <p>Commemorating national unity with live acoustic orchestral performances, kids
+                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="event-inner">
+                            <a href="#">
+                                <img src="images/imgi_18_Rang-e-khaas_banner-580x390-ezgif.com-jpg-to-webp-converter.webp" alt="#">
+                                <span>Patriotic Gala</span>
+                                <h3>Azadi Mubarak Celebrations</h3>
+                                <p>Commemorating national unity with live acoustic orchestral performances, kids
+                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="event-inner">
+                            <a href="#">
+                                <img src="images/imgi_19_bari-eid-cover-ezgif.com-jpg-to-webp-converter1.webp" alt="#">
                                 <span>Patriotic Gala</span>
                                 <h3>Azadi Mubarak Celebrations</h3>
                                 <p>Commemorating national unity with live acoustic orchestral performances, kids
@@ -266,25 +281,18 @@
                             </a>
                         </div>
                     </div>
-
                     <!-- Add remaining event slides here -->
-
                 </div>
-
                 <!-- Navigation -->
                 <div class="event-prev">
                     <span class="arrow-icon arrow-left"></span>
                 </div>
-
                 <div class="event-next">
                     <span class="arrow-icon arrow-right"></span>
                 </div>
-
                 <!-- Pagination -->
                 <div class="event-pagination"></div>
-
             </div>
-
         </div>
     </section>
     <section class="our-partner">
@@ -537,8 +545,8 @@
             </div>
         </div>
     </section>
-    
-    <section class="events-main padding-main">
+
+    <section class="blog-mains padding-main">
         <div class="container">
             <div class="heading-flex">
                 <div class="heading-flx-width">
@@ -554,102 +562,102 @@
                     </a>
                 </div>
             </div>
+            <div class="hold-data">
 
-            <div class="swiper main-event-slider">
-
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="event-inner">
-                            <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
-                                <span>Patriotic Gala</span>
-                                <h3>Azadi Mubarak Celebrations</h3>
-                                <p>Commemorating national unity with live acoustic orchestral performances, kids
-                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
+                <!-- LEFT: Featured Article -->
+                <div class="hold-width">
+                    <div class="event-inner featured-event">
+                        <a href="#">
+                            <img src="images/blog1.webp" alt="">
+                            <div class="featured-content">
+                                <span>Entertainment, Fashion</span>
+                                <h3>Amanah Shopping Festival 2026 – Shop More, Smile More This Ramzan</h3>
+                                <p>
+                                    Ramzan brings blessings, reflection, and togetherness.
+                                    It also brings the joy of Eid shopping. Families prepare
+                                    for Eid with excitement....
                                 </p>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="swiper-slide">
-                        <div class="event-inner">
-                            <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
-                                <span>Patriotic Gala</span>
-                                <h3>Azadi Mubarak Celebrations</h3>
-                                <p>Commemorating national unity with live acoustic orchestral performances, kids
-                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="event-inner">
-                            <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
-                                <span>Patriotic Gala</span>
-                                <h3>Azadi Mubarak Celebrations</h3>
-                                <p>Commemorating national unity with live acoustic orchestral performances, kids
-                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="event-inner">
-                            <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
-                                <span>Patriotic Gala</span>
-                                <h3>Azadi Mubarak Celebrations</h3>
-                                <p>Commemorating national unity with live acoustic orchestral performances, kids
-                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="event-inner">
-                            <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
-                                <span>Patriotic Gala</span>
-                                <h3>Azadi Mubarak Celebrations</h3>
-                                <p>Commemorating national unity with live acoustic orchestral performances, kids
-                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="event-inner">
-                            <a href="#">
-                                <img src="images/imgi_75_14th-August-580x390.png" alt="#">
-                                <span>Patriotic Gala</span>
-                                <h3>Azadi Mubarak Celebrations</h3>
-                                <p>Commemorating national unity with live acoustic orchestral performances, kids
-                                    face-painting, flag hoisting, and special seasonal discounts throughout the weekend.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Add remaining event slides here -->
-
                 </div>
 
-                <!-- Navigation -->
-                <div class="event-prev">
-                    <span class="arrow-icon arrow-left"></span>
-                </div>
+                <!-- RIGHT: Scrollable Articles -->
+                <div class="hold-width">
 
-                <div class="event-next">
-                    <span class="arrow-icon arrow-right"></span>
-                </div>
+                    <div class="news-list-viewport">
 
-                <!-- Pagination -->
-                <div class="event-pagination"></div>
+                        <div class="news-list-track">
+
+                            <!-- Article 1: Same as featured article -->
+                            <div class="event-inner">
+                                <a href="#">
+                                    <img src="images/blog1.webp" alt="">
+                                    <div class="inner-coloum-content">
+                                        <span>Entertainment, Fashion</span>
+                                        <h3>Amanah Shopping Festival 2026 – Shop More, Smile More This Ramzan</h3>
+                                        <p>Ramzan brings blessings, reflection, and togetherness. It also brings the joy
+                                            of Eid shopping. Families prepare for Eid with excitement....</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Article 2 -->
+                            <div class="event-inner">
+                                <a href="#">
+                                    <img src="images/blog2.webp" alt="">
+                                    <div class="inner-coloum-content">
+                                        <span>Fashion</span>
+                                        <h3>How Shopping Malls Increase Brand Visibility in Lahore</h3>
+                                        <p>Lahore is one of Pakistan’s most competitive retail markets. New brands enter
+                                            the market every month. Local and international labels...</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Article 3 -->
+                            <div class="event-inner">
+                                <a href="#">
+                                    <img src="images/blog3.webp" alt="">
+                                    <div class="inner-coloum-content">
+                                        <span>Fashion</span>
+                                        <h3>Top Fashion Brands to Explore at Amanah Mall Lahore</h3>
+                                        <p>Amanah Mall Lahore stands as one of the city’s premier shopping destinations.
+                                            Shoppers visit from across Lahore to explore its...</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Article 4 -->
+                            <div class="event-inner">
+                                <a href="#">
+                                    <img src="images/blog4.webp" alt="">
+                                    <div class="inner-coloum-content">
+                                        <span>Entertainment, Fashion</span>
+                                        <h3>Why Families Prefer Amanah Mall for Weekend Outings</h3>
+                                        <p>Weekends are the perfect time for families to relax, bond, and have fun
+                                            together. Choosing the right destination is important...</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Article 5 -->
+                            <div class="event-inner">
+                                <a href="#">
+                                    <img src="images/blog5.webp" alt="">
+                                    <div class="inner-coloum-content">
+                                        <span>Games & Fun</span>
+                                        <h3>Benefits of Play Areas for Children’s Development</h3>
+                                        <p>Introduction Childhood has changed. Many children now spend more time on
+                                            screens than in playgrounds. Apartments, traffic, and safety concerns...</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -830,7 +838,7 @@
                         </ul>
                     </div>
                     <div class="inner-footer">
-              
+
                         <div class="socail-icons">
                             <ul>
                                 <li><a href="#"><img src="images/svg-code-48x48.png" alt="#"></a></li>
@@ -840,7 +848,7 @@
                         </div>
                     </div>
                 </div>
-              
+
 
 
             </div>
@@ -853,37 +861,29 @@
             </div>
         </div>
         <div class="text-stroke">
-            <svg height="150" width="100%" viewBox="0 0 1400 150"
-                 preserveAspectRatio="xMidYMid meet" class="text-line">
-        
+            <svg height="150" width="100%" viewBox="0 0 1400 150" preserveAspectRatio="xMidYMid meet" class="text-line">
+
                 <defs>
-                    <linearGradient id="textGradient"
-                        x1="0%" y1="0%" x2="100%" y2="0%">
-        
-                        <stop offset="0%" stop-color="#080D48"/>
-                        <stop offset="25%" stop-color="#101B65"/>
-                        <stop offset="50%" stop-color="#0873C8"/>
-                        <stop offset="75%" stop-color="#08A9E8"/>
-                        <stop offset="100%" stop-color="#080D48"/>
-        
-                        <animateTransform
-                            attributeName="gradientTransform"
-                            type="translate"
-                            values="-1 0; 1 0; -1 0"
-                            dur="5s"
-                            repeatCount="indefinite"/>
+                    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+
+                        <stop offset="0%" stop-color="#080D48" />
+                        <stop offset="25%" stop-color="#101B65" />
+                        <stop offset="50%" stop-color="#0873C8" />
+                        <stop offset="75%" stop-color="#08A9E8" />
+                        <stop offset="100%" stop-color="#080D48" />
+
+                        <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0"
+                            dur="5s" repeatCount="indefinite" />
                     </linearGradient>
                 </defs>
-        
-                <text x="700" y="140"
-                    text-anchor="middle"
-                    class="gradient-text">
+
+                <text x="700" y="140" text-anchor="middle" class="gradient-text">
                     Amanah Mall Lahore
                 </text>
-        
+
             </svg>
         </div>
-        
+
 
     </footer>
     <!-- jQuery Version 3.2.1 -->
@@ -1106,35 +1106,380 @@
     });
 </script>
 <script>
-gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".gradient-text", {
-    strokeDashoffset: 0,
-    duration: 5,
-    ease: "none",
+    gsap.to(".gradient-text", {
+        strokeDashoffset: 0,
+        duration: 5,
+        ease: "none",
 
-    scrollTrigger: {
-        trigger: ".footer",
-        start: "top 80%",
-        toggleActions: "play none none none"
-    },
+        scrollTrigger: {
+            trigger: ".footer",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
 
-    onComplete: function () {
-        gsap.to(".gradient-text", {
-            strokeDashoffset: 2000,
-            duration: 0,
-            onComplete: function () {
-                gsap.to(".gradient-text", {
-                    strokeDashoffset: 0,
-                    duration: 5,
-                    ease: "none",
-                    repeat: -1,
-                    repeatDelay: 0.5
-                });
+        onComplete: function () {
+            gsap.to(".gradient-text", {
+                strokeDashoffset: 2000,
+                duration: 0,
+                onComplete: function () {
+                    gsap.to(".gradient-text", {
+                        strokeDashoffset: 0,
+                        duration: 5,
+                        ease: "none",
+                        repeat: -1,
+                        repeatDelay: 0.5
+                    });
+                }
+            });
+        }
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const banner = document.querySelector(".banner-reveal");
+        const overlay = document.querySelector(".banner-reveal__overlay");
+        const video = document.querySelector(".banner-reveal__video video");
+        const maskText = document.querySelector("#amanahMask text");
+        const caption = document.querySelector(".banner-reveal__caption");
+        const scroll = document.querySelector(".banner-reveal__scroll");
+        const header = document.querySelector("header");
+
+        if (!banner || !overlay || !video || !maskText) return;
+
+        // Initial states
+        gsap.set(overlay, {
+            opacity: 1
+        });
+
+        gsap.set(maskText, {
+            scale: 1,
+            transformOrigin: "50% 50%"
+        });
+
+        gsap.set(video, {
+            scale: 1.15
+        });
+
+        // Main Reveal Timeline
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: banner,
+                start: "top top",
+                end: "+=150%",
+                scrub: 1,
+                pin: true,
+                anticipatePin: 1,
+                invalidateOnRefresh: true
             }
         });
+
+        // 1. Caption and scroll indicator
+        tl.to([caption, scroll], {
+            opacity: 0,
+            y: -35,
+            duration: 0.2,
+            ease: "none"
+        }, 0);
+
+        // 2. First text zoom
+        tl.to(maskText, {
+            scale: 2.2,
+            duration: 0.35,
+            ease: "none"
+        }, 0);
+
+        // 3. Dramatic text zoom
+        tl.to(maskText, {
+            scale: 8,
+            duration: 0.65,
+            ease: "none"
+        }, 0.35);
+
+        // 4. White background disappears
+        // SAME TIME as text zoom
+        tl.to(overlay, {
+            opacity: 0,
+            duration: 1,
+            ease: "none"
+        }, 0);
+
+        // 5. Video gradually expands
+        // SAME TIME as text zoom and overlay fade
+        tl.to(video, {
+            scale: 1,
+            duration: 1,
+            ease: "none"
+        }, 0);
+
+        // Header Animation
+        if (header) {
+
+            ScrollTrigger.create({
+                trigger: banner,
+                start: "top top",
+                end: "bottom top",
+
+                onEnter: () => {
+                    gsap.to(header, {
+                        y: "-100%",
+                        duration: 0.35,
+                        ease: "power2.out",
+                        overwrite: true
+                    });
+                },
+
+                onLeave: () => {
+                    gsap.to(header, {
+                        y: "0%",
+                        duration: 0.4,
+                        ease: "power2.out",
+                        overwrite: true
+                    });
+                },
+
+                onEnterBack: () => {
+                    gsap.to(header, {
+                        y: "-100%",
+                        duration: 0.3,
+                        overwrite: true
+                    });
+                },
+
+                onLeaveBack: () => {
+                    gsap.to(header, {
+                        y: "0%",
+                        duration: 0.4,
+                        overwrite: true
+                    });
+                }
+            });
+
+        }
+
+        // Refresh
+        if (video.readyState >= 1) {
+            ScrollTrigger.refresh();
+        } else {
+            video.addEventListener("loadedmetadata", () => {
+                ScrollTrigger.refresh();
+            }, {
+                once: true
+            });
+        }
+
+    });
+</script>
+<script>
+
+
+
+
+    gsap.registerPlugin(ScrollTrigger);
+    
+    let newsTween;
+    let resizeTimer;
+    let activeNewsIndex = -1;
+    
+    function initNewsScroll() {
+    
+        // Kill previous animation
+        if (newsTween) {
+            newsTween.scrollTrigger?.kill();
+            newsTween.kill();
+            newsTween = null;
+        }
+    
+        ScrollTrigger.getById("news-scroll")?.kill();
+    
+        const section = document.querySelector(".blog-mains");
+        if (!section) return;
+    
+        const leftColumn = section.querySelector(".hold-width:first-child");
+        const viewport = section.querySelector(".news-list-viewport");
+        const track = section.querySelector(".news-list-track");
+    
+        if (!leftColumn || !viewport || !track) return;
+    
+        const leftAnchor = leftColumn.querySelector(".event-inner a");
+        const rightEvents = Array.from(
+            track.querySelectorAll(".event-inner")
+        );
+    
+        if (!leftAnchor || !rightEvents.length) return;
+    
+        // Reset animation
+        gsap.set(track, { clearProps: "transform" });
+        gsap.set(leftAnchor, { autoAlpha: 1 });
+    
+        activeNewsIndex = -1;
+    
+        // Update left featured article
+        function updateFeatured(index) {
+    
+            if (index === activeNewsIndex) return;
+    
+            if (index < 0 || index >= rightEvents.length) return;
+    
+            const sourceEvent = rightEvents[index];
+            const sourceLink = sourceEvent.querySelector("a");
+    
+            const sourceImage = sourceEvent.querySelector("img");
+            const sourceContent = sourceEvent.querySelector(
+                ".inner-coloum-content"
+            );
+    
+            if (!sourceImage || !sourceContent || !sourceLink) return;
+    
+            activeNewsIndex = index;
+    
+            const newImage = sourceImage.cloneNode(true);
+    
+            const newContent = document.createElement("div");
+            newContent.className = "featured-content";
+    
+            Array.from(sourceContent.children).forEach(child => {
+                newContent.appendChild(child.cloneNode(true));
+            });
+    
+            gsap.killTweensOf(leftAnchor);
+    
+            gsap.to(leftAnchor, {
+                autoAlpha: 0,
+                y: 12,
+                duration: 0.25,
+                ease: "power2.in",
+    
+                onComplete: () => {
+    
+                    leftAnchor.href = sourceLink.href;
+    
+                    leftAnchor.replaceChildren(
+                        newImage,
+                        newContent
+                    );
+    
+                    gsap.fromTo(
+                        leftAnchor,
+                        {
+                            autoAlpha: 0,
+                            y: 12
+                        },
+                        {
+                            autoAlpha: 1,
+                            y: 0,
+                            duration: 0.4,
+                            ease: "power3.out"
+                        }
+                    );
+                }
+            });
+        }
+    
+        // Mobile: normal stacked layout
+        if (window.innerWidth <= 767) {
+    
+            gsap.set(track, { clearProps: "transform" });
+    
+            ScrollTrigger.refresh();
+            return;
+        }
+    
+        // Calculate scroll distance
+        const viewportHeight = viewport.clientHeight;
+        const trackHeight = track.scrollHeight;
+    
+        const distance = trackHeight - viewportHeight;
+    
+        if (distance <= 0) return;
+    
+        // Get original event positions
+        const eventPositions = rightEvents.map(event => {
+            return event.offsetTop - track.offsetTop;
+        });
+    
+        // Both columns start with first article
+        updateFeatured(0);
+    
+        // Right column scroll animation
+        newsTween = gsap.to(track, {
+    
+            y: -distance,
+    
+            ease: "none",
+    
+            scrollTrigger: {
+    
+                id: "news-scroll",
+    
+                trigger: section,
+    
+                start: "top top",
+    
+                end: () => "+=" + distance,
+    
+                pin: true,
+    
+                pinSpacing: true,
+    
+                scrub: 1,
+    
+                anticipatePin: 1,
+    
+                invalidateOnRefresh: true,
+    
+                onUpdate: self => {
+    
+                    const currentScroll = self.progress * distance;
+    
+                    let currentIndex = 0;
+    
+                    // Detect active article
+                    eventPositions.forEach((position, index) => {
+    
+                        if (currentScroll >= position) {
+                            currentIndex = index;
+                        }
+    
+                    });
+    
+                    // Update left column
+                    updateFeatured(currentIndex);
+    
+                }
+            }
+        });
+    
+        ScrollTrigger.refresh();
     }
-});
+    
+    
+    // Initialize after images and layout load
+    window.addEventListener("load", () => {
+        initNewsScroll();
+    });
+    
+    
+    // Handle resize
+    window.addEventListener("resize", () => {
+    
+        clearTimeout(resizeTimer);
+    
+        resizeTimer = setTimeout(() => {
+    
+            initNewsScroll();
+    
+        }, 400);
+    
+    });
+    
+    
+    
+    
     </script>
 
 </html>
